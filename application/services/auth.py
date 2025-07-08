@@ -1,0 +1,1 @@
+def check_login(u, p): return USERS.get(u) == p

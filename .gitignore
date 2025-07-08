@@ -1,0 +1,22 @@
+# Entornos virtuales
+venv/
+.env
+*.env
+
+# Archivos temporales y de sistema
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Archivos de configuración de usuario
+*.swp
+.DS_Store
+
+# Archivos generados por Streamlit
+.streamlit/
+
+# Resultados de ejecución
+pdfs/
+resultado/
