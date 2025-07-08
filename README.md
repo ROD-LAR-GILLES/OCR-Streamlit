@@ -1,51 +1,55 @@
-# OCR-Streamlit: Sistema Integrado de OCR y Chat
+OCR-Streamlit: Sistema Integrado de OCR y Chat
 
-Este proyecto es una aplicación basada en **Streamlit** que combina un sistema de reconocimiento óptico de caracteres (OCR) con un asistente de chat impulsado por modelos de lenguaje de OpenAI. Permite procesar documentos PDF, extraer texto y tablas, y realizar consultas sobre el contenido procesado.
+Este proyecto es una aplicación basada en Streamlit que combina un sistema de reconocimiento óptico de caracteres (OCR) con un asistente de chat impulsado por modelos de lenguaje de OpenAI. Permite procesar documentos PDF, extraer texto y tablas, y realizar consultas sobre el contenido procesado.
 
-## Características
+Características
+	•	OCR avanzado: Utiliza PyMuPDF, Tesseract y pdfplumber para extraer texto y tablas de documentos PDF.
+	•	Procesamiento de tablas: Extrae tablas utilizando Camelot y pdfplumber.
+	•	Chat contextual: Realiza preguntas sobre el contenido de los documentos procesados utilizando modelos de lenguaje de OpenAI.
+	•	Interfaz intuitiva: Una interfaz interactiva basada en Streamlit para subir, procesar y consultar documentos.
 
-- **OCR avanzado**: Utiliza PyMuPDF, Tesseract y pdfplumber para extraer texto y tablas de documentos PDF.
-- **Procesamiento de tablas**: Extrae tablas utilizando Camelot y pdfplumber.
-- **Chat contextual**: Realiza preguntas sobre el contenido de los documentos procesados utilizando modelos de lenguaje de OpenAI.
-- **Interfaz intuitiva**: Una interfaz interactiva basada en Streamlit para subir, procesar y consultar documentos.
+Estructura del Proyecto
 
-## Estructura del Proyecto
-
-```plaintext
 .
 ├── adapters/
 │   ├── embedding/
-│   │   └── [embedding_openai.py](http://_vscodecontentref_/0)
+│   │   └── embedding_openai.py
 │   ├── ocr/
 │   └── pdf/
 ├── application/
-│   ├── [chat_retrieval.py](http://_vscodecontentref_/1)
-│   ├── [procesar_md.py](http://_vscodecontentref_/2)
-│   ├── [use_cases.py](http://_vscodecontentref_/3)
+│   ├── chat_retrieval.py
+│   ├── procesar_md.py
+│   ├── use_cases.py
 │   └── services/
-│       ├── [auth.py](http://_vscodecontentref_/4)
-│       └── [pdf_processor.py](http://_vscodecontentref_/5)
+│       ├── auth.py
+│       └── pdf_processor.py
 ├── data/
 │   ├── pdfs/
 │   └── resultado/
 ├── domain/
-│   ├── [document_chunk.py](http://_vscodecontentref_/6)
-│   └── [models.py](http://_vscodecontentref_/7)
+│   ├── document_chunk.py
+│   └── models.py
 ├── infrastructure/
 │   ├── config/
-│   │   └── [config.py](http://_vscodecontentref_/8)
+│   │   └── config.py
 │   ├── llm/
-│   │   └── [openai_chat.py](http://_vscodecontentref_/9)
+│   │   └── openai_chat.py
 │   ├── markdown/
-│   │   └── [markdown_converter.py](http://_vscodecontentref_/10)
+│   │   └── markdown_converter.py
 ├── interfaces/
 │   └── streamlit/
-│       └── [streamlit_app.py](http://_vscodecontentref_/11)
+│       └── streamlit_app.py
 ├── .env
-├── [.env.example](http://_vscodecontentref_/12)
+├── .env.example
 ├── .gitignore
-├── [docker-compose.yml](http://_vscodecontentref_/13)
+├── docker-compose.yml
 ├── dockerfile
-├── [main.py](http://_vscodecontentref_/14)
-├── [README.md](http://_vscodecontentref_/15)
-└── [requirements.txt](http://_vscodecontentref_/16)
+├── main.py
+├── README.md
+└── requirements.txt
+
+
+⸻
+
+✨ Optimizaciones Realizadas en el Sistema OCR + Chat
+
