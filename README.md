@@ -201,10 +201,6 @@ sudo docker-compose up --build
 - Los documentos deben ser PDFs válidos
 - Para mejor precisión, usa PDFs con buena calidad de imagen
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
-
 ---
 
 ⚡ **¡Listo para procesar tus documentos con IA!** 🚀
